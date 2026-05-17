@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from .models import Book, Author, BookInstance
 from django.db.models import Q
+from django.contrib.auth.decorators import login_required
+from .models import Loan
 
 
 def index(request):
@@ -21,9 +23,9 @@ def book_list(request):
 
     if search_query:
         books = Book.objects.filter(
-            Q(title__icontains=search_query) |
-            Q(genre__icontains=search_query) |
-            Q(authors__name__icontains=search_query)
+            Q(title__iregex=search_query) |
+            Q(genre__iregex=search_query) |
+            Q(authors__name__iregex=search_query)
         ).distinct()
     else:
         books = Book.objects.all()
@@ -33,3 +35,10 @@ def book_list(request):
         'search_query': search_query,
     }
     return render(request, 'catalog/book_list.html', context)
+
+
+@login_required
+def my_books(request):
+    user_loans = Loan.objects.filter(reader=request.user)
+
+    return render(request, 'catalog/my_books.html', {'user_loans': user_loans})

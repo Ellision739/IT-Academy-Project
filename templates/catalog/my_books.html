@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}Мои книги{% endblock %}
+
+{% block content %}
+<h1 class="mb-4 fw-bold">Книги на руках</h1>
+
+<div class="card shadow-sm border-0 p-4 bg-white">
+    {% if user_loans %}
+        <div class="table-responsive">
+            <table class="table table-hover align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th>Инв. номер</th>
+                        <th>Название книги</th>
+                        <th>Дата возврата</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for loan in user_loans %}
+                        <tr>
+                            <td><code>#{{ loan.book_instance.inventory_number }}</code></td>
+                            <td><strong>{{ loan.book_instance.book.title }}</strong></td>
+                            <td class="text-danger">{{ loan.return_date|date:"d.m.Y" }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    {% else %}
+        <p class="text-muted my-3 text-center">У вас нет книг на руках. Возьмите что-нибудь в каталоге!</p>
+    {% endif %}
+</div>
+{% endblock %}
