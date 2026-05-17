@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}Главная — Библиотека{% endblock %}
+
+{% block content %}
+<div class="p-5 mb-4 bg-white rounded-3 shadow-sm border">
+    <h1 class="display-5 fw-bold text-primary">Система управления личной библиотекой</h1>
+    <p class="col-md-8 fs-5 text-muted">Добро пожаловать! Теперь наш сайт обзавелся полноценной навигацией.</p>
+</div>
+
+<div class="row g-4">
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+            <div class="card-body text-center p-4">
+                <h5 class="card-title text-muted mb-3">Всего книг в каталоге</h5>
+                <p class="display-4 fw-bold text-success">{{ num_books }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+            <div class="card-body text-center p-4">
+                <h5 class="card-title text-muted mb-3">Авторов в базе</h5>
+                <p class="display-4 fw-bold text-info">{{ num_authors }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+            <div class="card-body text-center p-4">
+                <h5 class="card-title text-muted mb-3">Физических экземпляров</h5>
+                <p class="display-4 fw-bold text-warning">{{ num_instances }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

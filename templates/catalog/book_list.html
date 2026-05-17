@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}Каталог книг{% endblock %}
+
+{% block content %}
+<h1 class="mb-4 fw-bold">Каталог книг</h1>
+
+<form method="get" class="row g-2 mb-4">
+    <div class="col-md-9">
+        <input type="text" name="search" class="form-content form-control-lg w-100" placeholder="Поиск по названию, автору или жанру..." value="{{ search_query }}">
+    </div>
+    <div class="col-md-3">
+        <button type="submit" class="btn btn-primary btn-lg w-100">Найти</button>
+    </div>
+</form>
+
+<div class="row g-4">
+    {% for book in books %}
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0 p-3">
+                <div class="card-body">
+                    <span class="badge bg-secondary mb-2">{{ book.get_genre_display }}</span>
+                    <h3 class="card-title fw-bold text-dark">{{ book.title }}</h3>
+                    <p class="card-text text-muted">
+                        <strong>Авторы:</strong> 
+                        {% for author in book.authors.all %}
+                            {{ author.name }}{% if not forloop.last %}, {% endif %}
+                        {% endfor %}
+                    </p>
+                    <p class="card-text text-truncate">{{ book.description }}</p>
+                    <p class="text-xs text-muted small">ISBN: {{ book.isbn }}</p>
+                    <a href="#" class="btn btn-outline-primary btn-sm disabled">Добавить в библиотеку</a>
+                </div>
+            </div>
+        </div>
+    {% empty %}
+        <div class="col-12 text-center my-5">
+            <p class="fs-4 text-muted">Книг по вашему запросу не найдено.</p>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
