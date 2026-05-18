@@ -1,5 +1,878 @@
 [
 {
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-05-17T11:37:19.744Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Толстой",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2026-05-17T11:38:14.043Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Война и мир",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2026-05-17T11:38:27.192Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Война и мир",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-05-17T12:32:25.726Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "№ 1 — Война и мир",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-05-17T12:32:41.796Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Ellision — Война и мир",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-05-17T13:47:55.460Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Лев Толстой",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u0418\\u041e \\u0430\\u0432\\u0442\\u043e\\u0440\\u0430\", \"\\u0411\\u0438\\u043e\\u0433\\u0440\\u0430\\u0444\\u0438\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2026-05-17T13:48:17.276Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Фёдор Достоевский",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2026-05-17T13:48:40.455Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Антон Чехов",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2026-05-17T13:48:59.996Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Михаил Булгаков",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2026-05-17T13:49:28.524Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Александр Пушкин",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2026-05-17T13:51:03.891Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Илья Ильф",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2026-05-17T13:51:39.883Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Евгений Петров",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2026-05-17T13:51:55.372Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Война и мир",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2026-05-17T13:53:02.710Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Преступление и наказание",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2026-05-17T13:54:32.964Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Палата №6",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2026-05-17T13:55:52.544Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Капитанская дочка",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2026-05-17T13:58:32.062Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Двенадцать стульев",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2026-05-17T13:58:36.432Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Двенадцать стульев",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2026-05-17T13:58:54.002Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "№ 2 — Война и мир",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2026-05-17T13:59:03.646Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "№ 3 — Война и мир",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2026-05-17T13:59:26.215Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "№ 4 — Преступление и наказание",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2026-05-17T13:59:33.283Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "№ 5 — Преступление и наказание",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2026-05-17T13:59:41.303Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "№ 6 — Палата №6",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2026-05-17T13:59:48.829Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "7",
+    "object_repr": "№ 7 — Капитанская дочка",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2026-05-17T13:59:58.584Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "8",
+    "object_repr": "№ 8 — Капитанская дочка",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2026-05-17T14:00:05.603Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "9",
+    "object_repr": "№ 9 — Двенадцать стульев",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2026-05-17T14:00:14.400Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "10",
+    "object_repr": "№ 10 — Двенадцать стульев",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2026-05-17T14:38:56.711Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "6",
+    "object_repr": "Ellision — Война и мир",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2026-05-17T14:39:02.776Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "Ellision — Война и мир",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2026-05-17T14:39:05.594Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Ellision — Война и мир",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2026-05-17T14:39:08.418Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Ellision — Война и мир",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2026-05-17T14:46:18.359Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Ellision — Палата №6",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2026-05-17T14:46:21.667Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Ellision — Война и мир",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2026-05-18T08:42:22.434Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "№ 1 — Война и мир",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u044d\\u043a\\u0437\\u0435\\u043c\\u043f\\u043b\\u044f\\u0440\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2026-05-18T08:42:25.711Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "№ 2 — Война и мир",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u044d\\u043a\\u0437\\u0435\\u043c\\u043f\\u043b\\u044f\\u0440\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2026-05-18T08:42:28.082Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "№ 3 — Война и мир",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u044d\\u043a\\u0437\\u0435\\u043c\\u043f\\u043b\\u044f\\u0440\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2026-05-18T08:42:30.283Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "№ 4 — Преступление и наказание",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u044d\\u043a\\u0437\\u0435\\u043c\\u043f\\u043b\\u044f\\u0440\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2026-05-18T08:42:32.210Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "№ 5 — Преступление и наказание",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u044d\\u043a\\u0437\\u0435\\u043c\\u043f\\u043b\\u044f\\u0440\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2026-05-18T08:42:33.837Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "№ 6 — Палата №6",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u044d\\u043a\\u0437\\u0435\\u043c\\u043f\\u043b\\u044f\\u0440\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2026-05-18T08:42:35.646Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "7",
+    "object_repr": "№ 7 — Капитанская дочка",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u044d\\u043a\\u0437\\u0435\\u043c\\u043f\\u043b\\u044f\\u0440\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2026-05-18T08:42:37.501Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "8",
+    "object_repr": "№ 8 — Капитанская дочка",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u044d\\u043a\\u0437\\u0435\\u043c\\u043f\\u043b\\u044f\\u0440\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2026-05-18T08:42:39.442Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "9",
+    "object_repr": "№ 9 — Двенадцать стульев",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u044d\\u043a\\u0437\\u0435\\u043c\\u043f\\u043b\\u044f\\u0440\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2026-05-18T08:42:41.592Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "10",
+    "object_repr": "№ 10 — Двенадцать стульев",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u044d\\u043a\\u0437\\u0435\\u043c\\u043f\\u043b\\u044f\\u0440\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2026-05-18T08:42:50.605Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "№ 1 — Война и мир",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u044d\\u043a\\u0437\\u0435\\u043c\\u043f\\u043b\\u044f\\u0440\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2026-05-18T08:43:07.486Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "№ 2 — Война и мир",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0435\\u0441\\u0442\\u043e_\\u0445\\u0440\\u0430\\u043d\\u0435\\u043d\\u0438\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2026-05-18T08:43:12.784Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "№ 3 — Война и мир",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0435\\u0441\\u0442\\u043e_\\u0445\\u0440\\u0430\\u043d\\u0435\\u043d\\u0438\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2026-05-18T08:43:15.977Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "№ 4 — Преступление и наказание",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2026-05-18T08:43:21.769Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "№ 5 — Преступление и наказание",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0435\\u0441\\u0442\\u043e_\\u0445\\u0440\\u0430\\u043d\\u0435\\u043d\\u0438\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2026-05-18T08:43:25.226Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "№ 6 — Палата №6",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2026-05-18T08:43:29.984Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "7",
+    "object_repr": "№ 7 — Капитанская дочка",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0435\\u0441\\u0442\\u043e_\\u0445\\u0440\\u0430\\u043d\\u0435\\u043d\\u0438\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2026-05-18T08:43:35.384Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "8",
+    "object_repr": "№ 8 — Капитанская дочка",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0435\\u0441\\u0442\\u043e_\\u0445\\u0440\\u0430\\u043d\\u0435\\u043d\\u0438\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2026-05-18T08:43:39.208Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "9",
+    "object_repr": "№ 9 — Двенадцать стульев",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0435\\u0441\\u0442\\u043e_\\u0445\\u0440\\u0430\\u043d\\u0435\\u043d\\u0438\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2026-05-18T08:43:42.737Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "10",
+    "object_repr": "№ 10 — Двенадцать стульев",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0435\\u0441\\u0442\\u043e_\\u0445\\u0440\\u0430\\u043d\\u0435\\u043d\\u0438\\u044f\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2026-05-18T08:52:43.247Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "10",
+    "object_repr": "№ 10 — Двенадцать стульев",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u044d\\u043a\\u0437\\u0435\\u043c\\u043f\\u043b\\u044f\\u0440\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2026-05-18T08:52:47.826Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "10",
+    "object_repr": "№ 10 — Двенадцать стульев",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2026-05-18T08:52:51.204Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "9",
+    "object_repr": "№ 9 — Двенадцать стульев",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u044d\\u043a\\u0437\\u0435\\u043c\\u043f\\u043b\\u044f\\u0440\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2026-05-18T08:53:31.844Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "9",
+    "object_repr": "№ 9 — Двенадцать стульев",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u044d\\u043a\\u0437\\u0435\\u043c\\u043f\\u043b\\u044f\\u0440\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2026-05-18T08:53:54.428Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "9",
+    "object_repr": "№ 9 — Двенадцать стульев",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u044d\\u043a\\u0437\\u0435\\u043c\\u043f\\u043b\\u044f\\u0440\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2026-05-18T08:54:13.237Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "9",
+    "object_repr": "№ 9 — Двенадцать стульев",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u044d\\u043a\\u0437\\u0435\\u043c\\u043f\\u043b\\u044f\\u0440\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2026-05-18T10:44:50.863Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "№ 2 — Война и мир",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u044d\\u043a\\u0437\\u0435\\u043c\\u043f\\u043b\\u044f\\u0440\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2026-05-18T10:45:08.448Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "№ 2 — Война и мир",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u044d\\u043a\\u0437\\u0435\\u043c\\u043f\\u043b\\u044f\\u0440\\u0430\"]}}]"
+  }
+},
+{
+  "model": "users.reader",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$IUE8zsy0wMa1FXpmMhKo8M$FltkVN/VkA6kx2vxqxrHjqRFNoa7aAoUb73p59Ib7NQ=",
+    "last_login": "2026-05-18T10:43:07.266Z",
+    "is_superuser": true,
+    "username": "Ellision",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-05-17T11:34:27.875Z",
+    "phone": "",
+    "address": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.reader",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$UepJDa3TBTrOihFqWKH4rJ$aEBi3vfL8Ds3tqPCwmb3koIR9LUdXJySnDZex1JZ9vs=",
+    "last_login": "2026-05-18T09:14:46.544Z",
+    "is_superuser": false,
+    "username": "User1",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-18T08:47:30.512Z",
+    "phone": "",
+    "address": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.reader",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$LOT8dePSL5xZqAzwFkRd3D$LZMiRVUjerovbBZbUkhx3tfPtf2/vWV0lHC5LljwLQo=",
+    "last_login": "2026-05-18T08:48:17.025Z",
+    "is_superuser": false,
+    "username": "User3",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-18T08:48:16.037Z",
+    "phone": "",
+    "address": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.reader",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$WlZEGrUlp7mE8ShmEEpDlO$vsgTcYRWP9aM3khREDgVOzOBa72Kz187SWpeMJxnr84=",
+    "last_login": "2026-05-18T10:53:21.807Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-05-18T10:49:29.432Z",
+    "phone": "",
+    "address": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
   "model": "catalog.author",
   "pk": 1,
   "fields": {
