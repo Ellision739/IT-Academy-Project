@@ -28,8 +28,27 @@
                         {% endfor %}
                     </p>
                     <p class="card-text text-truncate">{{ book.description }}</p>
-                    <p class="text-xs text-muted small">ISBN: {{ book.isbn }}</p>
-                    <a href="#" class="btn btn-outline-primary btn-sm disabled">Добавить в библиотеку</a>
+                    <p class="card-text mb-3">
+                        <small class="text-muted">
+                            Доступно экземпляров:
+                            <span class="badge {% if book.available_copies_count > 0 %}bg-success{% else %}bg-danger{% endif %}">
+                                {{ book.available_copies_count }} шт.
+                            </span>
+                        </small>
+                    </p>
+
+                    {% if book.available_copies_count > 0 %}
+                        {% if user.is_authenticated %}
+                            <form method="post" action="{% url 'order_book' book.id %}" class="d-inline">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-primary btn-sm">Забронировать</button>
+                            </form>
+                        {% else %}
+                            <a href="{% url 'login' %}" class="btn btn-outline-secondary btn-sm">Войдите для заказа</a>
+                        {% endif %}
+                    {% else %}
+                        <button class="btn btn-secondary btn-sm" disabled>Нет в наличии</button>
+                    {% endif %}
                 </div>
             </div>
         </div>

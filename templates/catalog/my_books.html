@@ -13,7 +13,9 @@
                     <tr>
                         <th>Инв. номер</th>
                         <th>Название книги</th>
+                        <th>Статус</th>
                         <th>Дата возврата</th>
+                        <th>Действие</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -21,14 +23,29 @@
                         <tr>
                             <td><code>#{{ loan.book_instance.inventory_number }}</code></td>
                             <td><strong>{{ loan.book_instance.book.title }}</strong></td>
-                            <td class="text-danger">{{ loan.return_date|date:"d.m.Y" }}</td>
+                            <td>
+                                {% if loan.book_instance.status == 'reserved' %}
+                                    <span class="badge bg-warning text-dark">Забронировано</span>
+                                {% elif loan.book_instance.status == 'on_hand' %}
+                                    <span class="badge bg-success">На руках</span>
+                                {% endif %}
+                            </td>
+                            <td class="text-muted">{{ loan.return_date|date:"d.m.Y" }}</td>
+                            <td>
+                                {% if loan.book_instance.status == 'reserved' %}
+                                    <form method="post" action="{% url 'cancel_order' loan.id %}" class="d-flex mb-0">
+                                        {% csrf_token %}
+                                        <button type="submit" class="btn btn-outline-danger btn-sm">Отменить бронь</button>
+                                    </form>
+                                {% endif %}
+                            </td>
                         </tr>
                     {% endfor %}
                 </tbody>
             </table>
         </div>
     {% else %}
-        <p class="text-muted my-3 text-center">У вас нет книг на руках. Возьмите что-нибудь в каталоге!</p>
+        <p class="text-muted my-3 text-center">У вас пока нет забронированных или выданных книг.</p>
     {% endif %}
 </div>
 {% endblock %}

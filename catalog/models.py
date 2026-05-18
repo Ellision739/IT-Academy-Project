@@ -40,12 +40,12 @@ GENRE_CHOICES = [
     ('programming', 'Программирование'),
 ]
 
-STATUS_CHOICES = [
-    ('excellent', 'Отлично'),
-    ('good', 'Хорошо'),
-    ('average', 'Среднее'),
-    ('bad', 'Плохое'),
-]
+LOAN_STATUS = (
+        ('available', 'Доступно'),
+        ('reserved', 'Забронировано'),
+        ('on_hand', 'На руках'),
+        ('archive', 'В архиве'),
+    )
 
 class Author(models.Model):
     name = models.CharField(max_length=255, verbose_name="ФИО автора")
@@ -77,15 +77,19 @@ class Book(models.Model):
     def __str__(self):
         return self.title
 
+    @property
+    def available_copies_count(self):
+        return self.bookinstance_set.filter(status='available').count()
+
 class BookInstance(models.Model):
     inventory_number = models.AutoField(primary_key=True, verbose_name="Инвентарный_номер")
     book = models.ForeignKey(Book, on_delete=models.CASCADE, verbose_name="Книга")
-    status = models.CharField(max_length=50, choices=STATUS_CHOICES, verbose_name="Состояние")
+    status = models.CharField(max_length=50, choices=LOAN_STATUS, default='available', verbose_name="Статус экземпляра")
     location = models.CharField(max_length=100, verbose_name="Место_хранения")
 
     class Meta:
-        verbose_name = "Экземпляр"
-        verbose_name_plural = "Экземпляры"
+        verbose_name = "Экземпляр книги"
+        verbose_name_plural = "Экземпляры книг"
 
     def __str__(self):
         return f"№ {self.inventory_number} — {self.book.title}"
