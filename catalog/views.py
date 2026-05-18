@@ -11,10 +11,12 @@ from datetime import date, timedelta
 
 User = get_user_model()
 
+
 class CustomRegisterForm(UserCreationForm):
     class Meta(UserCreationForm.Meta):
         model = User
         fields = ('username',)
+
 
 def register(request):
     if request.method == 'POST':
@@ -26,6 +28,7 @@ def register(request):
     else:
         form = CustomRegisterForm()
     return render(request, 'registration/register.html', {'form': form})
+
 
 def index(request):
     num_books = Book.objects.count()
@@ -40,14 +43,13 @@ def index(request):
 
     return render(request, 'catalog/index.html', context=context)
 
+
 def book_list(request):
     search_query = request.GET.get('search', '')
 
     if search_query:
         books = Book.objects.filter(
-            Q(title__iregex=search_query) |
-            Q(genre__iregex=search_query) |
-            Q(authors__name__iregex=search_query)
+            Q(title__iregex=search_query) | Q(genre__iregex=search_query) | Q(authors__name__iregex=search_query)
         ).distinct()
     else:
         books = Book.objects.all()
@@ -92,6 +94,7 @@ def order_book(request, book_id):
             )
 
     return redirect('my_books')
+
 
 @login_required
 def cancel_order(request, loan_id):

@@ -41,11 +41,12 @@ GENRE_CHOICES = [
 ]
 
 LOAN_STATUS = (
-        ('available', 'Доступно'),
-        ('reserved', 'Забронировано'),
-        ('on_hand', 'На руках'),
-        ('archive', 'В архиве'),
-    )
+    ('available', 'Доступно'),
+    ('reserved', 'Забронировано'),
+    ('on_hand', 'На руках'),
+    ('archive', 'В архиве'),
+)
+
 
 class Author(models.Model):
     name = models.CharField(max_length=255, verbose_name="ФИО автора")
@@ -81,6 +82,7 @@ class Book(models.Model):
     def available_copies_count(self):
         return self.bookinstance_set.filter(status='available').count()
 
+
 class BookInstance(models.Model):
     inventory_number = models.AutoField(primary_key=True, verbose_name="Инвентарный_номер")
     book = models.ForeignKey(Book, on_delete=models.CASCADE, verbose_name="Книга")
@@ -93,6 +95,7 @@ class BookInstance(models.Model):
 
     def __str__(self):
         return f"№ {self.inventory_number} — {self.book.title}"
+
 
 class Loan(models.Model):
     reader = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, verbose_name="Читатель")
