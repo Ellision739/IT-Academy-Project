@@ -28,18 +28,15 @@ class LibraryLogicTest(TestCase):
             location='Стойка тестов'
         )
 
-
     def test_available_copies_count(self):
         """Проверка корректности работы счетчика доступных книг"""
         self.assertEqual(self.book1.available_copies_count, 1)
-
 
     def test_reserved_copies_count(self):
         """Проверка, что забронированная книга пропадает из доступных"""
         self.instance.status = 'reserved'
         self.instance.save()
         self.assertEqual(self.book1.available_copies_count, 0)
-
 
     def test_book_search(self):
         """Тестирование работы поиска в каталоге книг"""
